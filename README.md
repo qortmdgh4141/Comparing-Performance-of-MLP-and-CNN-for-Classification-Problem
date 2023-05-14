@@ -416,6 +416,43 @@
 
   <img src="https://github.com/qortmdgh4141/Performance-Optimization-of-MLP-Model-for-Regression-Problem/blob/main/image/corr_heatmap_graph.png?raw=true" width="640">
 
+  ```
+  def gradientbars(bars, cmap_list):
+      grad = np.atleast_2d(np.linspace(0, 1, 256)).T
+      ax = bars[0].axes
+      lim = ax.get_xlim() + ax.get_ylim()
+      ax.axis(lim)
+      max_width = max([bar.get_width() for bar in bars])
+      for i, bar in enumerate(bars):
+          bar.set_facecolor("none")
+          x, y = bar.get_xy()
+          w, h = bar.get_width(), bar.get_height()
+          ax.imshow(grad, extent=[x, x + w, y, y + h], aspect="auto", cmap=cmap_list[i])
+          plt.text(w + 0.7, y + h / 2.0 + 0.015, "{}".format(int(w)), fontsize=8, ha='left', va='center')
+
+  # MLP 모델 및 CNN 모델의 오분류 빈도
+  mlp_error_count = len(y_test_class) - np.sum(y_test_class == mlp_y_pred_class)
+  cnn_error_count = len(y_test_class) - np.sum(y_test_class == cnn_y_pred_class)
+  error_counts = [mlp_error_count, cnn_error_count]
+
+  # 막대 그래프로 오분류 빈도 표현
+  models = ['MLP', 'CNN']
+  cmap_list = ['Reds', 'Blues']
+
+  fig, ax = plt.subplots(figsize=(12, 4))
+  bars = ax.barh(models, error_counts, color='white', alpha=0.7)
+  gradientbars(bars, cmap_list)
+
+  ax.set_ylabel('Model', fontsize=12)
+  ax.set_xlabel('Error Count', fontsize=12)
+  ax.set_title('< Error Count Comparison between MLP and CNN >', fontsize=10)
+
+  plt.show()
+
+  ```
+  
+  <img src="https://github.com/qortmdgh4141/Performance-Optimization-of-MLP-Model-for-Regression-Problem/blob/main/image/corr_heatmap_graph.png?raw=true" width="640">
+  
 - _Next, comparing the misclassification frequencies of the MLP and CNN models on the actual test data, the MLP model had 544 misclassifications, while the CNN model had 385 misclassifications. This indicates that the CNN model correctly predicted about 200 more answers compared to the MLP model._ <br/>
  
 - _This result clearly demonstrates the performance difference between MLP and CNN models, proving that CNN models are more suitable and show superior performance in fashion item image classification tasks._ <br/>
