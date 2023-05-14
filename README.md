@@ -367,7 +367,7 @@
     
 - _The objective of this study was to train MLP-based and CNN-based models using the Fashion-MNIST dataset and compare their classification performance._ <br/> 
 
-- _The graph below shows the change in both Loss and Accuracy with increasing Epochs during the training process of both the MLP-based and CNN-based models._ <br/> 
+- _The graph below shows the change in both Loss and Accuracy with increasing Epochs during the training process of both the MLP-based and CNN-based models._ <br/> <br/> 
   
   ```
   def plot_loss_and_accuracy(train_loss, val_loss, train_acc, val_acc, model_name):
@@ -412,7 +412,7 @@
  
 - _In contrast, examining the change in Loss in the graph for the CNN model shows no occurrence of overfitting. This suggests that the CNN model effectively learns the local structure and features of images compared to the MLP model, demonstrating better generalization capability on new data._ <br/>
 
-- _Furthermore, the CNN model exhibited a very fast convergence rate and high accuracy. Due to its specialized architecture for image processing, the CNN model was able to better capture the visual features of images and was more suitable for the classification task, surpassing the convergence rate and accuracy of the MLP model._ <br/>
+- _Furthermore, the CNN model exhibited a very fast convergence rate and high accuracy. Due to its specialized architecture for image processing, the CNN model was able to better capture the visual features of images and was more suitable for the classification task, surpassing the convergence rate and accuracy of the MLP model._ <br/><br/> 
 
   ```
   def gradientbars(bars, cmap_list):
