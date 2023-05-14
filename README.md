@@ -124,7 +124,7 @@
   plt.show()
   ```
   
-  <img src="https://github.com/qortmdgh4141/Performance-Optimization-of-MLP-Model-for-Regression-Problem/blob/main/image/density_graph.png?raw=true" height="320">
+  <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-MLP-and-CNN-for-Classification-Problem/blob/main/image/image_label_graph.png?raw=true">
   
 - _**Exploratory Data Analysis (EDA)**_ <br/> 
   
