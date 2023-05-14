@@ -170,7 +170,7 @@
   plt.show() # 그래프 출력
   ```
   
-  <img src="https://github.com/qortmdgh4141/Performance-Optimization-of-MLP-Model-for-Regression-Problem/blob/main/image/corr_heatmap_graph.png?raw=true" width="640">
+  <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-MLP-and-CNN-for-Classification-Problem/blob/main/image/vertical_bar_graph.png?raw=true">
     
 - _**Feature Scaling**_ <br/>  
   
@@ -406,15 +406,13 @@
                          results_cnn.history['accuracy'], results_cnn.history['val_accuracy'], 'CNN')
   ```
   
-  <img src="https://github.com/qortmdgh4141/Performance-Optimization-of-MLP-Model-for-Regression-Problem/blob/main/image/corr_heatmap_graph.png?raw=true" width="640">
+  <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-MLP-and-CNN-for-Classification-Problem/blob/main/image/line_graph.png?raw=true">
 
 - _In the MLP model, a slight overfitting phenomenon was observed. This indicates that the MLP model might be overly fitted to the training data, leading to a decrease in generalization performance on new data._ <br/>
  
 - _In contrast, examining the change in Loss in the graph for the CNN model shows no occurrence of overfitting. This suggests that the CNN model effectively learns the local structure and features of images compared to the MLP model, demonstrating better generalization capability on new data._ <br/>
 
 - _Furthermore, the CNN model exhibited a very fast convergence rate and high accuracy. Due to its specialized architecture for image processing, the CNN model was able to better capture the visual features of images and was more suitable for the classification task, surpassing the convergence rate and accuracy of the MLP model._ <br/>
-
-  <img src="https://github.com/qortmdgh4141/Performance-Optimization-of-MLP-Model-for-Regression-Problem/blob/main/image/corr_heatmap_graph.png?raw=true" width="640">
 
   ```
   def gradientbars(bars, cmap_list):
@@ -451,7 +449,7 @@
 
   ```
   
-  <img src="https://github.com/qortmdgh4141/Performance-Optimization-of-MLP-Model-for-Regression-Problem/blob/main/image/corr_heatmap_graph.png?raw=true" width="640">
+  <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-MLP-and-CNN-for-Classification-Problem/blob/main/image/horizontal_bar_graph.png?raw=true">
   
 - _Next, comparing the misclassification frequencies of the MLP and CNN models on the actual test data, the MLP model had 544 misclassifications, while the CNN model had 385 misclassifications. This indicates that the CNN model correctly predicted about 200 more answers compared to the MLP model._ <br/>
  
