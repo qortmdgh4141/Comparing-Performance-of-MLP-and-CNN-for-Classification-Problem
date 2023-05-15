@@ -15,7 +15,7 @@
   
   - _CNN is a deep learning model specialized in image processing, which handles local information through convolution and pooling operations using shared parameters. Such a structure can better capture the visual features of fashion item images and be more suitable for classification tasks._ <br/><br/>
   
-- _Based on this background, we will train MLP-based models and CNN-based models, respectively, and apply them to the classification task of the Fashion-MNIST dataset. It is expected that these results will contribute to the improvement of performance in image classification tasks and aid in model selection in practical applications._ <br/><br/><br/> 
+- _Based on this background,  will train MLP-based models and CNN-based models, respectively, and apply them to the classification task of the Fashion-MNIST dataset. It is expected that these results will contribute to the improvement of performance in image classification tasks and aid in model selection in practical applications._ <br/><br/><br/> 
 
 ### 2. &nbsp; Key Components of the Neural Network Model and Experimental Settings  <br/><br/>
 
