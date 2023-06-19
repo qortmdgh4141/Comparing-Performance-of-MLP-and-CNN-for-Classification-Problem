@@ -1,4 +1,4 @@
-# 👕  Comparing Performance of MLP and CNN for Classification Problem
+# 👕  Comparing Performance of MLP and CNN for Classification Problem 
 <br/>
   
 ### 1. &nbsp; Research Objective <br/><br/>
